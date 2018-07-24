@@ -1163,6 +1163,7 @@ public:
         if(onResponse) {
             onResponse(response);
         }
+        gtkDialog.hide();
         return response;
     }
 
