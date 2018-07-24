@@ -157,6 +157,7 @@ bool GraphicsWindow::ToolbarDrawOrHitTest(int mx, int my,
 
     if(!canvas && !withinToolbar) {
         // This gets called every MouseMove event, so return quickly.
+        if(menuHit) *menuHit = Command::NONE;
         return false;
     }
 
